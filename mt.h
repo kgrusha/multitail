@@ -2,7 +2,7 @@
 #define __MT_H__
 
 #define _LARGEFILE64_SOURCE	/* required for GLIBC to enable stat64 and friends */
-#include <regex.h>
+#include <pcre2posix.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <arpa/inet.h>

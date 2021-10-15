@@ -1,6 +1,6 @@
 #define _LARGEFILE64_SOURCE     /* required for GLIBC to enable stat64 and friends */
 #include <sys/types.h>
-#include <regex.h>
+#include <pcre2posix.h>
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>

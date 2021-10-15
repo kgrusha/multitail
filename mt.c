@@ -6,7 +6,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <limits.h>
-#include <regex.h>
+#include <pcre2posix.h>
 #if !defined(__APPLE__) && !defined(__CYGWIN__)
 #include <search.h>
 #endif

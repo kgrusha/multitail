@@ -1,6 +1,6 @@
 #define _LARGEFILE64_SOURCE     /* required for GLIBC to enable stat64 and friends */
 #include <sys/types.h>
-#include <regex.h>
+#include <pcre2posix.h>
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
@@ -46,7 +46,7 @@ char * epoch_to_str(time_t epoch)
 
 	new_string = mymalloc(4096);
 	if (!strftime(new_string, 4096, cnv_ts_format, ptm))
-		error_exit(FALSE, FALSE, "An error occured whilte converting timestamp format '%s'.\n", cnv_ts_format);
+		error_exit(FALSE, FALSE, "An error occured while converting timestamp format '%s'.\n", cnv_ts_format);
 
 	return new_string;
 }
