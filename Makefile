@@ -51,14 +51,14 @@ install: multitail
 	mkdir -p $(DESTDIR)$(PREFIX)/share/man/man1
 	cp multitail.1 $(DESTDIR)$(PREFIX)/share/man/man1/multitail.1
 	mkdir -p $(DESTDIR)$(PREFIX)/share/doc/multitail-$(VERSION)
-	cp *.txt INSTALL manual*.html $(DESTDIR)$(PREFIX)/share/doc/multitail-$(VERSION)
+	cp AUTHORS INSTALL LICENSE README.md manual*.html $(DESTDIR)$(PREFIX)/share/doc/multitail-$(VERSION)
 	#
 	### COPIED multitail.conf.new, YOU NEED TO REPLACE THE multitail.conf
 	### YOURSELF WITH THE NEW FILE
 	#
 	mkdir -p $(DESTDIR)$(PREFIX)/etc/multitail/
 	cp multitail.conf $(CONFIG_FILE).new
-	cp conversion-scripts/* $(DESTDIR)$(PREFIX)/etc/multitail/
+#cp conversion-scripts/* $(DESTDIR)$(PREFIX)/etc/multitail/
 #rm -f $(DESTDIR)$(PREFIX)/share/man/man1/multitail.1.gz
 #gzip -9 $(DESTDIR)$(PREFIX)/share/man/man1/multitail.1
 	#
@@ -85,7 +85,7 @@ package: clean
 	# source package
 	rm -rf multitail-$(VERSION)*
 	mkdir multitail-$(VERSION)
-	cp -a conversion-scripts *.conf *.c *.h multitail.1 manual*.html Makefile makefile.* INSTALL license.txt readme.txt thanks.txt version multitail-$(VERSION)
+	cp -a *.conf *.c *.h multitail.1 manual*.html Makefile makefile.* AUTHORS INSTALL LICENSE README.md version multitail-$(VERSION)
 	tar czf multitail-$(VERSION).tgz multitail-$(VERSION)
 	rm -rf multitail-$(VERSION)
 
