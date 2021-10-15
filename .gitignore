@@ -1,6 +1,7 @@
 .DS_Store
 .vscode
 *.a
+*.d
 *.lo
 *.la
 *.pc
