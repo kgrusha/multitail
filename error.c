@@ -7,7 +7,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <signal.h>
-#include <pcre2posix.h>
 #if defined(__GLIBC__)
 #include <execinfo.h>
 #endif

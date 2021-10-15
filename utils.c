@@ -7,7 +7,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <sys/types.h>
-#include <pcre2posix.h>
 #include <sys/stat.h>
 #include <sys/time.h>
 #include <time.h>

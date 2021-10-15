@@ -3,7 +3,6 @@
 #include <errno.h>
 #include <sys/time.h>
 #include <sys/types.h>
-#include <pcre2posix.h>
 #include <signal.h>
 #include <stdlib.h>
 #include <string.h>

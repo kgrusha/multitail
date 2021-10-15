@@ -2,12 +2,16 @@
 #define __MT_H__
 
 #define _LARGEFILE64_SOURCE	/* required for GLIBC to enable stat64 and friends */
-#include <pcre2posix.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <arpa/inet.h>
 #include <sys/socket.h>
 #include <sys/types.h>
+
+#ifndef _PCRE2POSIX_H_
+#define _PCRE2POSIX_H_
+#include <pcre2posix.h>
+#endif /* !_PCRE2POSIX_H_ */
 
 #define WAIT_FOR_FILE_DELAY	(250)	/* sleep when waiting for a file to become available */
 #define MAX_N_RE_MATCHES	(80)	/* max. number of regex matches: used for coloring matches */

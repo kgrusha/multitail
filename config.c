@@ -1,7 +1,6 @@
 #define _LARGEFILE64_SOURCE     /* required for GLIBC to enable stat64 and friends */
 #include "doassert.h"
 #include <sys/types.h>
-#include <pcre2posix.h>
 #include <string.h>
 #include <strings.h>
 #include <errno.h>
