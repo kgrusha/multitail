@@ -58,7 +58,7 @@ void error_exit_(BOOL show_errno, BOOL show_st, char *file, const char *function
 
 	fflush(NULL);
 
-	(void)kill(0, SIGTERM); /* terminate every process in the process group of the current process */
+	// (void)kill(0, SIGTERM); /* terminate every process in the process group of the current process */
 
 	exit(EXIT_FAILURE);
 }
